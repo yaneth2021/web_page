@@ -1,0 +1,107 @@
+/* Estilos generales */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+/* ¿Qué es una clase en CSS?
+   Una clase es un selector que permite aplicar estilos a múltiples elementos HTML.
+   Se define en CSS con un punto delante (.nombre-clase) y se aplica en HTML con class="nombre-clase" */
+.header {
+    text-align: center;
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: #2c3e50;
+    color: white;
+    border-radius: 5px;
+}
+
+.nombre {
+    font-size: 2.5em;
+    margin-bottom: 5px;
+}
+
+.titulo {
+    font-size: 1.5em;
+    font-weight: normal;
+    margin-top: 0;
+}
+
+/* Estilos para secciones */
+.seccion {
+    margin-bottom: 25px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.seccion-titulo {
+    color: #2c3e50;
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 10px;
+    margin-top: 0;
+}
+
+/* Estilos para elementos de experiencia y educación */
+.experiencia-item, .educacion-item, .proyecto-item {
+    margin-bottom: 20px;
+}
+
+.empresa, .institucion {
+    font-style: italic;
+    color: #7f8c8d;
+}
+
+/* Estilos para la lista de habilidades */
+.habilidades-lista {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 10px;
+}
+
+.habilidades-lista li {
+    background-color: #ecf0f1;
+    padding: 8px;
+    border-radius: 3px;
+    list-style-type: none;
+}
+
+/* Estilos para enlaces */
+a {
+    color: #3498db;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Estilos para el pie de página */
+.footer {
+    text-align: center;
+    margin-top: 40px;
+    padding: 20px;
+    color: #7f8c8d;
+    font-size: 0.9em;
+}
+
+/* Media queries para hacer la página responsive */
+@media (max-width: 600px) {
+    body {
+        padding: 10px;
+    }
+    
+    .nombre {
+        font-size: 2em;
+    }
+    
+    .habilidades-lista {
+        grid-template-columns: 1fr;
+    }
+}
